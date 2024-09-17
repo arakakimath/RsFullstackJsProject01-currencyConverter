@@ -9,3 +9,13 @@ amount.addEventListener("input", () => {
   amount.value = amount.value.replace(hasCharactersRegex, "");
   //console.log(amount.value);
 });
+
+const form = document.querySelector("form");
+const currency = document.getElementById("currency");
+
+//captando o evento de submit do formulário
+form.onsubmit = (event) => {
+  //prevenir o reload
+  event.preventDefault();
+  //console.log(currency.value);
+};
